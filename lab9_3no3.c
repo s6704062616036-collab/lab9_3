@@ -35,11 +35,10 @@ int main() {
     return 0;
 }
 
-
 int checkLogin(char *login, char *passwd, char *logindb, char *passdb) {
-    // strcmp จะคืนค่า 0 เมื่อข้อความเหมือนกันทุกประการ
+    
     if (strcmp(login, logindb) == 0 && strcmp(passwd, passdb) == 0) {
-        return 1; // ข้อมูลตรงกันทั้ง login และ password
+        return 1; 
     } else {
         return 0; 
     }
